@@ -1,0 +1,14 @@
+{
+  "WorkspaceID": "dv.ws.f59f5e97-0b26-4ded-ae04-ab58731c484f",
+  "RepoID": "dv.repo.33209e07-6130-43c9-8573-f382f630625d",
+  "Path": "D:\\Escuela\\Repositorios\\Paradise Technologies",
+  "AccountID": "Google_113739473026956410753",
+  "BranchID": "dv.branch.1",
+  "BranchName": "main",
+  "CommitID": "dv.commit.1",
+  "Paused": false,
+  "ShouldDownload": true,
+  "RepoName": "Paradise Technologies",
+  "ReadOnly": false,
+  "DigestMethod": "sha1"
+}
