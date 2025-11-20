@@ -155,6 +155,7 @@ GameObject:
   - component: {fileID: 8377072688605541950}
   - component: {fileID: 1757860461867752025}
   - component: {fileID: 1591942760600320495}
+  - component: {fileID: 7055439847981602200}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -328,7 +329,7 @@ MonoBehaviour:
   gravity: -9.81
   jumpHeight: 2
   mouseSensitivity: 2
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 6666101862235959795}
   canMove: 1
 --- !u!114 &1757860461867752025
 MonoBehaviour:
@@ -364,3 +365,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 6
   turnSpeed: 8
+--- !u!143 &7055439847981602200
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274570783078282109}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
