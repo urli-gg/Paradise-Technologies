@@ -7,13 +7,15 @@ public class GameManager : MonoBehaviour
     public GameObject spaceInvadersRoot; // assign SpaceInvadersGame
     public Transform player;             // assign Player transform
     public Transform lookTarget;         // assign GiantComputer transform
-    public GameObject miniMapUI;         // assign MiniMap panel
+    //public GameObject miniMapUI;         // assign MiniMap panel
     public Button playButton;            // assign PlayButton
+   //public GameObject minigameCanvas;
 
     bool inMinigame = false;
     Quaternion originalCamRot;
     Vector3 originalCamPos;
     Camera playerCamera;
+
 
     void Start()
     {
@@ -30,7 +32,8 @@ public class GameManager : MonoBehaviour
         }
 
         if (spaceInvadersRoot != null) spaceInvadersRoot.SetActive(false);
-        if (miniMapUI != null) miniMapUI.SetActive(false);
+       // if (miniMapUI != null) miniMapUI.SetActive(false);
+       // if (minigameCanvas != null) minigameCanvas.SetActive(false);
     }
 
     void Update()
@@ -44,7 +47,7 @@ public class GameManager : MonoBehaviour
     public void StartMinigame()
     {
         if (spaceInvadersRoot != null) spaceInvadersRoot.SetActive(true);
-        if (miniMapUI != null) miniMapUI.SetActive(true);
+       // if (miniMapUI != null) miniMapUI.SetActive(true);
         inMinigame = true;
 
         if (playerCamera != null && lookTarget != null)
@@ -53,6 +56,7 @@ public class GameManager : MonoBehaviour
             playerCamera.transform.LookAt(lookTarget.position);
             // opcional: bloquea la posición local de la cámara
             playerCamera.transform.localPosition = new Vector3(0, 1.6f, 0);
+           //if (minigameCanvas != null) minigameCanvas.SetActive(true);
         }
 
         if (playButton != null) playButton.gameObject.SetActive(false);
@@ -63,7 +67,7 @@ public class GameManager : MonoBehaviour
     {
         inMinigame = false;
         if (spaceInvadersRoot != null) spaceInvadersRoot.SetActive(false);
-        if (miniMapUI != null) miniMapUI.SetActive(false);
+       // if (miniMapUI != null) miniMapUI.SetActive(false);
         if (playButton != null) playButton.gameObject.SetActive(true);
 
         if (playerCamera != null)
