@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6d9b2bf5eba8f5a4ebdb2f66cca8b453
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174710
+  packageName: Mini First Person Controller
+  packageVersion: 1.1.0
+  assetPath: Assets/Mini First Person Controller/Scripts/Components/FirstPersonAudio.cs
+  uploadId: 442605

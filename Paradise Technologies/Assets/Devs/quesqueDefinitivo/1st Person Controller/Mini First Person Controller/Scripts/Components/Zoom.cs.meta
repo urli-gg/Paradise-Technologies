@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 560ea7ef75f0e3e43bbe9aba1fdb9c91
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174710
+  packageName: Mini First Person Controller
+  packageVersion: 1.1.0
+  assetPath: Assets/Mini First Person Controller/Scripts/Components/Zoom.cs
+  uploadId: 442605

@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 6598616816799009246}
   - component: {fileID: 6054124620724886903}
   - component: {fileID: 8675637435053756195}
-  - component: {fileID: 9047598449466149540}
+  - component: {fileID: 4848743842229183687}
   m_Layer: 0
   m_Name: Carro BBVA
   m_TagString: Untagged
@@ -549,7 +549,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9047598449466149540
+--- !u!114 &4848743842229183687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8571270328221748183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d9af14fabfaf0843b5aec7f02f09d2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f16919c1fc303940a41832289427a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 20
@@ -566,7 +566,7 @@ MonoBehaviour:
   decelerationRate: 3
   mouseSensitivity: 2
   exitPoint: {fileID: 0}
-  player: {fileID: 6274570783078282109, guid: 25762e5f2bfabfa4e98f9edd840baf07, type: 3}
+  player: {fileID: 0}
   interactionDistance: 3
   accelerateCanvas: {fileID: 0}
   accelerateButton: {fileID: 0}
