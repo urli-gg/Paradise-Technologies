@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class FirstPersonLook : MonoBehaviour
 {
@@ -35,5 +36,25 @@ public class FirstPersonLook : MonoBehaviour
         // Rotate camera up-down and controller left-right from velocity.
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+
+        PhysicalButtonClick();
+    }
+
+    private void PhysicalButtonClick()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+            Debug.Log("Sending raycast from click");
+
+            if (Physics.Raycast(ray, out RaycastHit hit, 1000f))
+            {
+                PhysicalButton button = hit.collider.GetComponentInChildren<PhysicalButton>();
+                if (button != null)
+                {
+                    button.ClickButton();
+                }
+            }
+        }
     }
 }

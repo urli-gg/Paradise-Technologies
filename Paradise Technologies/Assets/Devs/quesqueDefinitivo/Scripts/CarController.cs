@@ -148,9 +148,10 @@ public class CarController : MonoBehaviour
         }
     }
 
-    private void OnEnterButtonClick()
+    public void OnEnterButtonClick()
     {
         EnterCar();
+        Debug.Log("Botón de subir al auto presionado.");
     }
 
     public void EnterCar()
