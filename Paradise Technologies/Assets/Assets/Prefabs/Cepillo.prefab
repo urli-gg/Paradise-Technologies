@@ -64,12 +64,110 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e45db9ca422fa1240bdc56894d9891de, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e45db9ca422fa1240bdc56894d9891de, type: 3}
       propertyPath: m_Name
-      value: Cepillo 1
+      value: Cepillo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e45db9ca422fa1240bdc56894d9891de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8405617552613850999}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e45db9ca422fa1240bdc56894d9891de, type: 3}
+--- !u!4 &6862724996243627082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e45db9ca422fa1240bdc56894d9891de, type: 3}
+  m_PrefabInstance: {fileID: 6392848106432953249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8299142200947333276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6862724996243627082}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9847688
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.14893226
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.013416316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.08871128
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -17.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10.295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e691682cbdf8004f9c6989f10ae2ec2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e691682cbdf8004f9c6989f10ae2ec2, type: 2}
+    - target: {fileID: 919132149155446097, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+      propertyPath: m_Name
+      value: CepilloEscultura
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e45db9ca422fa1240bdc56894d9891de, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+--- !u!4 &8405617552613850999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db69e6be0a8b57b459c749e8c8691015, type: 3}
+  m_PrefabInstance: {fileID: 8299142200947333276}
+  m_PrefabAsset: {fileID: 0}
