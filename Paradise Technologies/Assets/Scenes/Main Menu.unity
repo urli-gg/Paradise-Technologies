@@ -563,6 +563,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b822fa446c5efd54aa031f6724b3bfe1, type: 3}
   m_PrefabInstance: {fileID: 206284866}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &210664904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4190abb270ef6114896e52e8e313a365, type: 3}
+  m_PrefabInstance: {fileID: 1712714857}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &221315894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1502,6 +1507,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cd1767ab756c83a4e9167e132dee5650, type: 3}
   m_PrefabInstance: {fileID: 526695111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &545020352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
+  m_PrefabInstance: {fileID: 1237084153}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &614707937
 GameObject:
@@ -2460,6 +2470,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a8f91c956b4fec489b830ca984a242a, type: 3}
   m_PrefabInstance: {fileID: 967205461}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1002020540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
+  m_PrefabInstance: {fileID: 1441727108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1048765203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2817,6 +2832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1208894313}
   - component: {fileID: 1208894314}
+  - component: {fileID: 1208894315}
   m_Layer: 0
   m_Name: Axis Menu
   m_TagString: Untagged
@@ -2838,10 +2854,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1498648441}
-  - {fileID: 110549831}
-  - {fileID: 674266121}
   - {fileID: 1821393099}
   - {fileID: 636444323}
+  - {fileID: 674266121}
+  - {fileID: 110549831}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1208894314
@@ -2865,6 +2881,23 @@ MonoBehaviour:
   index: 0
   rotationAmount: 72
   timeToRotate: 1
+--- !u!114 &1208894315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208894312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a667a2fea54c0144f872d46be7203b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressDepth: 0.05
+  Duration: 0.1
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1233204738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2994,13 +3027,69 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1237084157}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1237084158}
   m_SourcePrefab: {fileID: 100100000, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
 --- !u!4 &1237084154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
   m_PrefabInstance: {fileID: 1237084153}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1237084157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545020352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a667a2fea54c0144f872d46be7203b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressDepth: 0.05
+  Duration: 0.1
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1208894314}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: RotateRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1237084158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545020352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010797742, y: 0.00043434257, z: 0.01262471}
+  m_Center: {x: -0.0017917821, y: -0.000030438501, z: 0.0000007755588}
 --- !u!1001 &1271080119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3343,13 +3432,69 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1441727112}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1441727113}
   m_SourcePrefab: {fileID: 100100000, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
 --- !u!4 &1441727109 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b7e7ab4e21e24794dbab422fd46e5d9d, type: 3}
   m_PrefabInstance: {fileID: 1441727108}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1441727112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002020540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a667a2fea54c0144f872d46be7203b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressDepth: 0.05
+  Duration: 0.1
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1208894314}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: RotateLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1441727113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002020540}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010797747, y: 0.00043434493, z: 0.012624713}
+  m_Center: {x: -0.0017917829, y: -0.000030438507, z: 0.00000077556444}
 --- !u!1001 &1498648440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3726,13 +3871,69 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4190abb270ef6114896e52e8e313a365, type: 3}
       insertIndex: -1
       addedObject: {fileID: 749489279}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4190abb270ef6114896e52e8e313a365, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712714861}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4190abb270ef6114896e52e8e313a365, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712714862}
   m_SourcePrefab: {fileID: 100100000, guid: 4190abb270ef6114896e52e8e313a365, type: 3}
 --- !u!4 &1712714858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4190abb270ef6114896e52e8e313a365, type: 3}
   m_PrefabInstance: {fileID: 1712714857}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1712714861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210664904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a667a2fea54c0144f872d46be7203b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressDepth: 0.05
+  Duration: 0.1
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1208894314}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1712714862
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210664904}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.046023022, y: 0.00043434495, z: 0.012624713}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1774268124
 GameObject:
   m_ObjectHideFlags: 0

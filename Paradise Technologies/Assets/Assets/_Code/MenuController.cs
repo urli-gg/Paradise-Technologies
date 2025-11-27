@@ -25,6 +25,11 @@ public class MenuController : MonoBehaviour
         if (index < 0) index = menuObjects.Length - 1;
     }
 
+    public void LoadScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(GetCurrentIndex() + 1);
+    }
+
     public int GetCurrentIndex()
     {
         return index;
