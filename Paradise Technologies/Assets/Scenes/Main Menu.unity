@@ -2816,6 +2816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208894313}
+  - component: {fileID: 1208894314}
   m_Layer: 0
   m_Name: Axis Menu
   m_TagString: Untagged
@@ -2843,6 +2844,27 @@ Transform:
   - {fileID: 636444323}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1208894314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208894312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d07220e7aaa174b9324b8f08562c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuObjects:
+  - {fileID: 1498648441}
+  - {fileID: 110549831}
+  - {fileID: 674266121}
+  - {fileID: 1821393099}
+  - {fileID: 636444323}
+  index: 0
+  rotationAmount: 72
+  timeToRotate: 1
 --- !u!1001 &1233204738
 PrefabInstance:
   m_ObjectHideFlags: 0
