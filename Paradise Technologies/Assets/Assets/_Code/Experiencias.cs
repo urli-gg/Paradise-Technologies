@@ -1,25 +1,14 @@
-using JetBrains.Annotations;
-using NaughtyAttributes;
 using UnityEngine;
+using NaughtyAttributes;
 using UnityEngine.SceneManagement;
 
 public class Experiencias : MonoBehaviour
 {
-    public void Start()
-    {
-        SceneCoca();
-        SceneBBVA();
-        SceneColgate();
-        SceneShieldforce();
-        SceneYakult();  
-        SceneMenu();
-    }
-
     [Button]
     public void SceneCoca()
-        {
-            SceneManager.LoadScene("Metaverso CC");
-        }
+    {
+        SceneManager.LoadScene("Metaverso CC");
+    }
 
     [Button]
     public void SceneBBVA()
@@ -51,7 +40,3 @@ public class Experiencias : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 }
-
-
-
-

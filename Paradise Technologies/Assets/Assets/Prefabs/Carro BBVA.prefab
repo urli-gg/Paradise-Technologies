@@ -660,7 +660,7 @@ MonoBehaviour:
   mouseSensitivity: 2
   exitPoint: {fileID: 0}
   player: {fileID: 0}
-  interactionDistance: 3
+  interactionDistance: 5
   accelerateCanvas: {fileID: 0}
   accelerateButton: {fileID: 0}
   enterCanvas: {fileID: 0}
