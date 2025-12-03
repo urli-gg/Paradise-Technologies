@@ -47,7 +47,7 @@ public class FirstPersonLook : MonoBehaviour
             Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
             Debug.Log("Sending raycast from click");
 
-            if (Physics.Raycast(ray, out RaycastHit hit, 10000f))
+            if (Physics.Raycast(ray, out RaycastHit hit, 10f))
             {
                 PhysicalButton button = hit.collider.GetComponentInChildren<PhysicalButton>();
                 if (button != null)

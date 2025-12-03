@@ -5,7 +5,6 @@ using UnityEngine.Events;
 public class BoatMover : MonoBehaviour
 {
     [Header("Dependencies")]
-    [SerializeField, Required] private GameObject _player;
     [SerializeField, Required] private Transform _boatSeat;
 
     [SerializeField] private float _moveSpeed = 1f;
@@ -32,7 +31,7 @@ public class BoatMover : MonoBehaviour
         t += Time.fixedDeltaTime * _moveSpeed * (goingUp ? 1 : -1);
         float xOffset = Mathf.Sin(t) * _sinAmplitude;
         transform.localPosition = startLocalPos + new Vector3(0f, 0f, xOffset);
-        _player.transform.localPosition = new Vector3(0f, 0f, 0f);
+        GameObject.FindGameObjectWithTag("Player").transform.localPosition = new Vector3(0f, 0f, 0f);
 
         if (goingUp && xOffset >= _sinAmplitude - 0.001f)
         {
@@ -60,12 +59,12 @@ public class BoatMover : MonoBehaviour
 
     private void DisablePlayer()
     {
-        _player.transform.position = _boatSeat.position;
-        _player.transform.parent = this.transform;
+        GameObject.FindGameObjectWithTag("Player").transform.position = _boatSeat.position;
+        GameObject.FindGameObjectWithTag("Player").transform.parent = this.transform;
     }
 
     private void EnablePlayer()
     {
-        _player.transform.transform.parent = null;
+        GameObject.FindGameObjectWithTag("Player").transform.transform.parent = null;
     }
 }

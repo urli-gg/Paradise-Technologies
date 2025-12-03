@@ -434,7 +434,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: b46961d3890e45840b5b8755f2d6b74b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4495,11 +4495,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7169726479409901605, guid: ef11dcdb971444340b92d32cca5f3d8c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.959328
+      value: -18.85
       objectReference: {fileID: 0}
     - target: {fileID: 7169726479409901605, guid: ef11dcdb971444340b92d32cca5f3d8c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710677
+      value: 0.7071065
       objectReference: {fileID: 0}
     - target: {fileID: 7169726479409901605, guid: ef11dcdb971444340b92d32cca5f3d8c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4507,7 +4507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7169726479409901605, guid: ef11dcdb971444340b92d32cca5f3d8c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.7071071
       objectReference: {fileID: 0}
     - target: {fileID: 7169726479409901605, guid: ef11dcdb971444340b92d32cca5f3d8c, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4515,7 +4515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7169726479409901605, guid: ef11dcdb971444340b92d32cca5f3d8c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -10.5
+      value: -10.61
       objectReference: {fileID: 0}
     - target: {fileID: 7169726479409901605, guid: ef11dcdb971444340b92d32cca5f3d8c, type: 3}
       propertyPath: m_AnchoredPosition.y
