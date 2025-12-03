@@ -1693,6 +1693,10 @@ PrefabInstance:
       propertyPath: interactionDistance
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6565618447142490332, guid: 1e05392b0bdb1624cbe559b6e6bab394, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8571270328221748183, guid: 1e05392b0bdb1624cbe559b6e6bab394, type: 3}
       propertyPath: m_Name
       value: Carro BBVA
@@ -1709,9 +1713,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2133551132}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8571270328221748183, guid: 1e05392b0bdb1624cbe559b6e6bab394, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1383795699}
     - targetCorrespondingSourceObject: {fileID: 856645416713237674, guid: 1e05392b0bdb1624cbe559b6e6bab394, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1438950127}
@@ -2127,11 +2128,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 4847292143412197923, guid: 25762e5f2bfabfa4e98f9edd840baf07, type: 3}
   m_PrefabInstance: {fileID: 110953018}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1304999511 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6666101862235959795, guid: 25762e5f2bfabfa4e98f9edd840baf07, type: 3}
-  m_PrefabInstance: {fileID: 110953018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1342906514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,38 +2345,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383688902}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1383795694 stripped
+--- !u!1 &1390149375 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8571270328221748183, guid: 1e05392b0bdb1624cbe559b6e6bab394, type: 3}
   m_PrefabInstance: {fileID: 1158545083}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1383795699
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383795694}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1438950121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 856645416713237674, guid: 1e05392b0bdb1624cbe559b6e6bab394, type: 3}
@@ -2409,11 +2378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7404f8f617a6c499491abe945559b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 10
-  turnSpeed: 50
-  cameraTransform: {fileID: 1304999511}
-  playerMesh: {fileID: 110953019}
-  carController: {fileID: 1438950123}
 --- !u!1 &1548989401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,9 +2806,9 @@ MonoBehaviour:
   OnButtonClicked:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1438950127}
+      - m_Target: {fileID: 1390149375}
         m_TargetAssemblyTypeName: CarControllerPCP, Assembly-CSharp
-        m_MethodName: StartDriving
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
