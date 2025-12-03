@@ -34,6 +34,7 @@ public class FirstPersonController : MonoBehaviour
         IsGroundedTwo();
         PlayerJumpTwo();
         GravityTwo();
+        ResetPlayer();
     }
 
     private void GravityTwo()
@@ -117,6 +118,15 @@ public class FirstPersonController : MonoBehaviour
     public void CanMove(bool value)
     {
         canMove = value;
+    }
+
+    public void ResetPlayer()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            gameObject.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
+            gameObject.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").gameObject.transform.position;
+        }
     }
 }
 

@@ -25,7 +25,7 @@ public class Experiencias : MonoBehaviour
     [Button]
     public void SceneShieldforce()
     {
-        SceneManager.LoadScene("Shielforce");
+        SceneManager.LoadScene("Shieldforce");
     }
 
     [Button]
@@ -38,5 +38,10 @@ public class Experiencias : MonoBehaviour
     public void SceneMenu()
     {
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void SceneExit()
+    {
+        Application.Quit();
     }
 }
